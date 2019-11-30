@@ -1,0 +1,5 @@
+crontab -e
+
+0 4 * * MON /root/scripts/update_script.sh
+@reboot /root/scripts/update_script.sh
+0 0 * * * /root/scripts/monitor_cron.sh
